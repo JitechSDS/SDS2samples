@@ -1,0 +1,14 @@
+from Designable.Proxies import MtrlCut
+
+cut_point_list = [p1, p2, p3, p4, p5]
+cut = MtrlCut()
+cut.mtrl = [material_to_be_cut, ]  # has to be a list
+for pt in cut_point_list:
+    cut.pts.append(pt)
+
+# rotate is optional
+cut.rotate = (X, Y, Z)  # must be a tuple
+# X, Y, and Z are rotations in degrees about their respective axes
+
+cut.cut("Layout")  # the parameter must be a string
+

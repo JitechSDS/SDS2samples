@@ -1,0 +1,88 @@
+<?xml version="1.0" ?>
+<EmbedPLData>
+  <!-- EmbedPL custom member data file -->
+  <!-- All units are imperial inches where applicable -->
+  <code_version>4.14</code_version>
+  <_version>1</_version>
+  <StudData>
+    <!-- Keep dictionary keys as str (stud_dia atribute) -->
+    <studinfo burn_off="0.125" head_diam="0.5" head_thk="0.1875" stud_diam="1/4"/>
+    <studinfo burn_off="0.125" head_diam="0.75" head_thk="0.281" stud_diam="3/8"/>
+    <studinfo burn_off="0.125" head_diam="1.0" head_thk="0.3125" stud_diam="1/2"/>
+    <studinfo burn_off="0.1875" head_diam="1.25" head_thk="0.3125" stud_diam="5/8"/>
+    <studinfo burn_off="0.1875" head_diam="1.25" head_thk="0.375" stud_diam="3/4"/>
+    <studinfo burn_off="0.1875" head_diam="1.375" head_thk="0.375" stud_diam="7/8"/>
+    <studinfo burn_off="0.25" head_diam="1.625" head_thk="0.5" stud_diam="1in"/>
+    <studinfo burn_off="0.125" head_diam="0.75" head_thk="0.281" stud_diam="10mm"/>
+    <studinfo burn_off="0.125" head_diam="1.0" head_thk="0.3125" stud_diam="13mm"/>
+    <studinfo burn_off="0.1875" head_diam="1.25" head_thk="0.3125" stud_diam="16mm"/>
+    <studinfo burn_off="0.1875" head_diam="1.25" head_thk="0.375" stud_diam="19mm"/>
+    <studinfo burn_off="0.1875" head_diam="1.375" head_thk="0.375" stud_diam="22mm"/>
+    <studinfo burn_off="0.25" head_diam="1.625" head_thk="0.5" stud_diam="25mm"/>
+  </StudData>
+  <PlateData>
+    <!-- Convert dictionary keys to integer (nom_depth attribute) -->
+    <!-- Nominal depth = 4 -->
+    <plateinfo dbaCols="1" dbaRows="2" dbaXSpa="8.0" dbaZSpa="6.0" holeCols="0" holeRows="0" holeXSpa="5.5" holeZSpa="5.5" mark_prefix="EM_" nom_depth="4" plate_depth="12.0" plate_length="12.0" plate_thk="0.625" studCols="1" studRows="2" studXSpa="8.0" studZSpa="6.0"/>
+    <!-- Nominal depth = 6 -->
+    <plateinfo dbaCols="2" dbaRows="3" dbaXSpa="8.0" dbaZSpa="6.0" holeCols="0" holeRows="0" holeXSpa="5.5" holeZSpa="5.5" mark_prefix="EM_" nom_depth="6" plate_depth="16.0" plate_length="12.0" plate_thk="0.625" studCols="2" studRows="3" studXSpa="8.0" studZSpa="6.0"/>
+    <!-- Nominal depth = 8 -->
+    <plateinfo dbaCols="2" dbaRows="3" dbaXSpa="8.0" dbaZSpa="6.0" holeCols="0" holeRows="0" holeXSpa="5.5" holeZSpa="5.5" mark_prefix="EM_" nom_depth="8" plate_depth="16.0" plate_length="12.0" plate_thk="0.625" studCols="2" studRows="3" studXSpa="8.0" studZSpa="6.0"/>
+    <!-- Nominal depth = 10 -->
+    <plateinfo dbaCols="2" dbaRows="3" dbaXSpa="8.0" dbaZSpa="6.0" holeCols="0" holeRows="0" holeXSpa="5.5" holeZSpa="5.5" mark_prefix="EM_" nom_depth="10" plate_depth="16.0" plate_length="12.0" plate_thk="0.625" studCols="2" studRows="3" studXSpa="8.0" studZSpa="6.0"/>
+    <!-- Nominal depth = 12 -->
+    <plateinfo dbaCols="2" dbaRows="3" dbaXSpa="8.0" dbaZSpa="6.5" holeCols="0" holeRows="0" holeXSpa="5.5" holeZSpa="5.5" mark_prefix="EM_" nom_depth="12" plate_depth="17.0" plate_length="12.0" plate_thk="0.625" studCols="2" studRows="3" studXSpa="8.0" studZSpa="6.5"/>
+    <!-- Nominal depth = 14 -->
+    <plateinfo dbaCols="2" dbaRows="3" dbaXSpa="8.0" dbaZSpa="7.5" holeCols="0" holeRows="0" holeXSpa="5.5" holeZSpa="5.5" mark_prefix="EM_" nom_depth="14" plate_depth="19.0" plate_length="12.0" plate_thk="0.625" studCols="2" studRows="3" studXSpa="8.0" studZSpa="7.5"/>
+    <!-- Nominal depth = 16 -->
+    <plateinfo dbaCols="2" dbaRows="3" dbaXSpa="8.0" dbaZSpa="8.5" holeCols="0" holeRows="0" holeXSpa="5.5" holeZSpa="5.5" mark_prefix="EM_" nom_depth="16" plate_depth="21.0" plate_length="12.0" plate_thk="0.625" studCols="2" studRows="3" studXSpa="8.0" studZSpa="8.5"/>
+    <!-- Nominal depth = 18 -->
+    <plateinfo dbaCols="2" dbaRows="4" dbaXSpa="8.0" dbaZSpa="6.5" holeCols="0" holeRows="0" holeXSpa="5.5" holeZSpa="5.5" mark_prefix="EM_" nom_depth="18" plate_depth="23.5" plate_length="12.0" plate_thk="0.75" studCols="2" studRows="4" studXSpa="8.0" studZSpa="6.5"/>
+    <!-- Nominal depth = 21 -->
+    <plateinfo dbaCols="2" dbaRows="4" dbaXSpa="8.0" dbaZSpa="7.5" holeCols="0" holeRows="0" holeXSpa="5.5" holeZSpa="5.5" mark_prefix="EM_" nom_depth="21" plate_depth="26.5" plate_length="12.0" plate_thk="0.75" studCols="2" studRows="4" studXSpa="8.0" studZSpa="7.5"/>
+    <!-- Nominal depth = 24 -->
+    <plateinfo dbaCols="2" dbaRows="5" dbaXSpa="8.0" dbaZSpa="6.25" holeCols="0" holeRows="0" holeXSpa="5.5" holeZSpa="5.5" mark_prefix="EM_" nom_depth="24" plate_depth="29.0" plate_length="12.0" plate_thk="0.75" studCols="2" studRows="5" studXSpa="8.0" studZSpa="6.25"/>
+    <!-- Nominal depth = 27 -->
+    <plateinfo dbaCols="2" dbaRows="6" dbaXSpa="8.0" dbaZSpa="5.625" holeCols="0" holeRows="0" holeXSpa="5.5" holeZSpa="5.5" mark_prefix="EM_" nom_depth="27" plate_depth="32.125" plate_length="12.0" plate_thk="0.75" studCols="2" studRows="6" studXSpa="8.0" studZSpa="5.625"/>
+    <!-- Nominal depth = 30 -->
+    <plateinfo dbaCols="2" dbaRows="7" dbaXSpa="8.0" dbaZSpa="5.25" holeCols="0" holeRows="0" holeXSpa="5.5" holeZSpa="5.5" mark_prefix="EM_" nom_depth="30" plate_depth="35.5" plate_length="12.0" plate_thk="0.75" studCols="2" studRows="7" studXSpa="8.0" studZSpa="5.25"/>
+    <!-- Nominal depth = 33 -->
+    <plateinfo dbaCols="2" dbaRows="8" dbaXSpa="8.0" dbaZSpa="5.0" holeCols="0" holeRows="0" holeXSpa="5.5" holeZSpa="5.5" mark_prefix="EM_" nom_depth="33" plate_depth="39.0" plate_length="12.0" plate_thk="0.75" studCols="2" studRows="8" studXSpa="8.0" studZSpa="5.0"/>
+    <!-- Nominal depth = 36 -->
+    <plateinfo dbaCols="2" dbaRows="8" dbaXSpa="8.0" dbaZSpa="5.375" holeCols="0" holeRows="0" holeXSpa="5.5" holeZSpa="5.5" mark_prefix="EM_" nom_depth="36" plate_depth="41.625" plate_length="12.0" plate_thk="0.75" studCols="2" studRows="8" studXSpa="8.0" studZSpa="5.375"/>
+    <!-- Nominal depth = 40 -->
+    <plateinfo dbaCols="2" dbaRows="9" dbaXSpa="8.0" dbaZSpa="5.125" holeCols="0" holeRows="0" holeXSpa="5.5" holeZSpa="5.5" mark_prefix="EM_" nom_depth="40" plate_depth="45.0" plate_length="12.0" plate_thk="0.75" studCols="2" studRows="9" studXSpa="8.0" studZSpa="5.125"/>
+  </PlateData>
+  <AnchorData>
+    <!-- ['Studs, DBAs, Holes', 'Mixed Anchors', 'Anchor Holes', 'Plain'] -->
+    <!-- AnchorData is for the 'Mixed Anchors' option -->
+    <!-- anchorColSpa and anchorRowSpa must have a comma, or the data cannot be updated through Setup tab -->
+    <anchordata anchorColSpa="8," anchorRowSpa="6," depth="4" patt="dd,ss,ss"/> 
+    <anchordata anchorColSpa="8," anchorRowSpa="6," depth="6" patt="dd,ss,ss"/>
+    <anchordata anchorColSpa="8," anchorRowSpa="6," depth="8" patt="dd,ss,ss"/>
+    <anchordata anchorColSpa="8," anchorRowSpa="6," depth="10" patt="dd,ss,ss"/>
+    <anchordata anchorColSpa="8," anchorRowSpa="6.5," depth="12" patt="dd,ss,ss"/>
+    <anchordata anchorColSpa="8," anchorRowSpa="7.5," depth="14" patt="dd,ss,ss"/>
+    <anchordata anchorColSpa="8," anchorRowSpa="8.5," depth="16" patt="dd,ss,ss"/>
+    <anchordata anchorColSpa="8," anchorRowSpa="6.5," depth="18" patt="dd,ss,ss,ss"/>
+    <anchordata anchorColSpa="8," anchorRowSpa="7.5," depth="21" patt="dd,ss,ss,ss"/>
+    <anchordata anchorColSpa="8," anchorRowSpa="6.25," depth="24" patt="dd,dd,ss,ss,ss"/>
+    <anchordata anchorColSpa="8," anchorRowSpa="5.625," depth="27" patt="dd,dd,ss,ss,ss,ss"/>
+    <anchordata anchorColSpa="8," anchorRowSpa="5.25," depth="30" patt="dd,dd,ss,ss,ss,ss,ss"/>
+    <anchordata anchorColSpa="8," anchorRowSpa="5," depth="33" patt="dd,dd,dd,ss,ss,ss,ss,ss"/>
+    <anchordata anchorColSpa="8," anchorRowSpa="5.375," depth="36" patt="dd,dd,dd,ss,ss,ss,ss,ss"/>
+    <anchordata anchorColSpa="8," anchorRowSpa="5.125,5.125" depth="40" patt="d-d,d-d,d-d,sss,sss,s-s,s-s,sss,sss"/>
+  </AnchorData>
+  <JoistAnchorData>
+    <!-- JoistAnchorData is for the 'Studs and DBAs' option -->
+    <jstanchordata anchorColSpa="5,5" anchorPatt="ddd,sss,sss,sss" anchorRowSpa="4,4,4" dbaCols="0" dbaRows="0" dbaXSpa="8.0" dbaZSpa="6.0" plate_depth="16.0" plate_length="15.0" plate_thk="0.75" series="LH" studCols="0" studRows="0" studXSpa="8.0" studZSpa="6.0"/>
+    <jstanchordata anchorColSpa="6," anchorPatt="dd,ss,ss" anchorRowSpa="4,4" dbaCols="0" dbaRows="0" dbaXSpa="8.0" dbaZSpa="6.0" plate_depth="12.0" plate_length="10.0" plate_thk="0.5" series="K" studCols="0" studRows="0" studXSpa="8.0" studZSpa="6.0"/>
+  </JoistAnchorData>
+  <SetupData>
+    <!-- ["Last values used","XML data"] -->
+    <setupinfo func_data_or_last="XML Data"/>
+    <setupinfo mark_prefix="EM_"/>
+  </SetupData>
+  <!-- Size and location of dialog boxes -->
+  <DialogData choiceDlgPos="564x93+120+311" mainDlgPos="535x738+1613+308" plateEditDlgPos="1705x147+482+356" plateOptionDlgPos="737x365+91+163" studEditDlgPos="547x147+664+134" studOptionDlgPos="600x177+672+142"/>
+</EmbedPLData>

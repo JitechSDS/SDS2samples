@@ -1,0 +1,40 @@
+from dialog import Dialog
+from dialog.checkbox import Checkbox
+from dialog.entry import Entry
+from dialog.rules import Always
+
+# this is a placeholder model to hold values as an example
+class Placeholder(object):
+    x = 12
+    checked = True
+
+model = Placeholder()
+
+# this is a way to generate a dialog free of the gadget interface
+# it shouldn't be used when creating custom objects
+d = Dialog()
+d.model = [model, ]
+
+# a function to pack or un-pack the entry widget based on some criteria
+# in this case, whether or not the checkbox is checked
+# we can use the widgets in the function prior to their assignment because we will
+# not be using it until after the widgets are defined; a little hack with the scoping
+
+def _is_entry_visible(evt):  # evt is a parameter passed in by the rule on the entry widget
+    example_entry.PackForget()  # PackForget removes the item from the screen
+    if check.Get():
+        example_entry.Pack()
+
+check = Checkbox(d, 'checked', 'Show X')
+
+example_entry = Entry(
+    d, # parent
+    'x',
+    int,
+    'X'
+)
+
+check.AddRule(Always, _is_entry_visible)  # this adds a rule to the 'check' widget that fires
+                                          # whenever there is a value change
+
+d.Run()

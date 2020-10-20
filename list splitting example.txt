@@ -1,0 +1,26 @@
+from dialog import Dialog
+from dialog.entry import Entry
+
+# this is a placeholder model to hold values as an example
+
+
+class Placeholder(object):
+    def __init__(self):
+        self._x = ''
+    
+    @property
+    def x(self):
+        return self._x.split()
+
+model = Placeholder()
+
+# this is a way to generate a dialog free of the gadget interface
+# it shouldn't be used when creating custom objects
+d = Dialog()
+d.model = [model, ]
+
+entry = Entry(d, '_x', str, 'List')
+
+d.Run()
+
+print model.x

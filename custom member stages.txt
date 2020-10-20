@@ -1,0 +1,71 @@
+from MemberBase import MemberBase
+
+class ExampleCustomMember(MemberBase):
+    def __init__(self):
+        MemberBase.__init__(self)
+    
+    def CreateMaterial(self):
+        """
+        At this point in process, nothing has been added
+
+        This method is called when creating material that is placed on
+        this object. During this stage, materials (plate, rolled section, etc...)
+        are being added to the model
+        """
+        pass
+    
+    def CreateMaterialOther(self, other):
+        """
+        This is for adding material to a member in the MembersCurrentlyObserved list.
+
+        other is a member number
+        """
+        pass
+    
+    def CreateHoleMatch(self):
+        """
+        This is where holes are added to material on this object
+
+        At this stage, you can assume that any and all material will
+        have been created (barring any errors).
+        """
+        pass
+
+    def CreateHoleMatchOther(self, other):
+        """
+        Add holes to members in MembersCurrentlyObserved
+
+        At this point, you can assume that any and all material has
+        been added to other
+        """
+        pass
+
+    def CreateDependentMaterial(self):
+        """
+        This stage is for bolts.
+
+        Here you can assume that all material and holes have been
+        added
+        """
+        pass
+    
+    def CreateDependentMaterialOther(self, other):
+        """
+        This stage is for bolts on members in MembersCurerntlyObserved
+        """
+        pass
+
+    def ProcessFinal(self):
+        """
+        Everything is added and done
+
+        If you have some work that needs to go at the very end
+        after everything else is finished, it goes here.
+        """
+        pass
+
+    def ProcessFinalOther(self, other):
+        """
+        ProcessFinal for members in MembersCurrentlyObserved
+        """
+        pass

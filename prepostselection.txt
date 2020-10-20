@@ -1,0 +1,17 @@
+import model
+
+ok, selection = model.PreOrPostSelection(
+    'Locate members',
+    filter_fn=lambda m: model.IsMember(m) and m.member_type == 'Beam'
+)
+
+print 'ok:', ok
+print 'selection:', selection
+
+# ok is True or False; True if the selection ended with 'Ok' and False otherwise
+# selection is the list of selected items
+# this example will select any member that is a beam
+# PreOrPostSelection will select anything (members, material, components, etc...)
+# if the filter is left blank
+
+# NOTE: selection will be a list of model objects; try a dir() on one to see what's available

@@ -1,0 +1,69 @@
+from Designable.ProcessableComponent import ProcessableComponent
+from sds2.utility.gadget_protocol import GadgetComponent
+from Versions import ComponentTemplateVersions
+from Screen import BuildComponentUI
+from Point3D import Point3D
+from Transform3D import MemberTransform
+from Transform3D import MemberIndexTransform
+from sds2.obj import mb
+
+
+@ComponentTemplateVersions
+class ComponentTemplate(GadgetComponent, ProcessableComponent):
+    """
+    Include a brief description of the component
+    """
+
+    ...
+
+
+    def SetReferencePointForMemberUI(self, mn):
+        """Set the reference point for the component on the member
+
+        The reference point is relative to the left end of the host member
+        
+        Args:
+            mn (int): Member number of the member hosting the component
+        """
+        # mb will return a MemberBase from a member number
+        host = mb(mn)
+        # you can create a Member transform like this
+        xform = MemberIndexTransform(mn)
+        # you can also construct them artificially using left and right
+        xform_left_to_right = MemberTransform(host.GetLeftLocation(), host.GetRightLocation(), host.rotation)
+        
+        # this will give you a Transform3D object which you can use to get
+        # the axes and translation
+        
+        # these are the x, y, and z axes for the member
+        x = xform.GetBasisVectorX()
+        y = xform.GetBasisVectorY()
+        z = xform.GetBasisVectorZ()
+        
+        # and the translation, which is the left end of the member in global coordinates
+        t = xform.GetTranslation()
+        
+        # to move the point along the axes, you multiply the distance times one
+        # of the axes
+        
+        # move a point 12 inches along the x axis
+        p = Point3D()  # this is initialized to (0., 0., 0.)
+        p += 12. * x
+        
+        # you can also chain them together
+        # p is reset for clarity in the example
+        p = (
+                12. * x +
+                24. * y +
+                6. * z
+        )  # the result of this addition is a Point3D object
+           # you don't actually need the period at the end of the number,
+           # it's just habit on my part to differentiate between what are supposed
+           # to be integers vs, what are supposed to be floats
+           
+        # p is now in local coordinates, e.g. (12., 24., 6) 
+        # in order to move it into gloabl, add the translation
+        p_global = p + t
+        
+        return p_global  # you can also just return p + t, no need to make a separate variable
+    ...

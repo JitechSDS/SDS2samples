@@ -1,0 +1,20 @@
+from Math3D import DistancePointLine
+from Point3D import Point3D
+
+
+# distance to top of steel
+xbasis = (
+    Point3D(beam.left),
+    Point3D(beam.right)
+)  # however you're getting these points; this needs to be a tuple and the points must be Point3D objects
+point_on_beam = Point3D(framing_member.left)  # whichever end of the member is on the beam
+dist = DistancePointLine(point_on_beam, xbasis)  # all points must be Point3D objects
+# dist will be the distance framing_member.left to the x-axis of the beam
+# for a beam, this is the top of steel.
+
+
+# distance along the x-axis
+point_on_beam = Point3D(framing_member.left)
+dist_along_x = point_on_beam.ScalarProjection(
+    Point3D(beam.right) - Point3D(beam.left)  # this is a vector
+)  # ScalarProjection returns the distance along the provided vector
