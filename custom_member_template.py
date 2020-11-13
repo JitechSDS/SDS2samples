@@ -113,8 +113,8 @@ class MyCustomMember( StateAccessor.StateAccessor, MemberBase.MemberBase ): #ren
     def __init__( self ):
         StateAccessor.StateAccessor.__init__( self )
         MemberBase.MemberBase.__init__( self )
-   self.SetMemberType( 'MyCustomMember' ) #must be <= 16 characters #rename
-   self.SetPiecemarkPrefix( 'MCM_' )      #used like B_ for a beam
+		self.SetMemberType( 'MyCustomMember' ) #must be <= 16 characters #rename
+		self.SetPiecemarkPrefix( 'MCM_' )      #used like B_ for a beam
         self.SetImmediateProcess( False )      #material generation immediately?
 
     def AddByPreselection( self ): #modify preselection function to suit needs
